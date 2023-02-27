@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Call-To-Action Button
+========================================================================== */
+
+.cta-button {
+    z-index:10; 
+    background-color: #133d8d; 
+    color: white;
+    border-radius: 999px;
+    padding: 15px 60px;
+}
+
+.is-align-top {
+    position: absolute;
+    top: 25px;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flexbox; */
+}
+
+.is-align-middle {
+    position: absolute;
+    top: 50%;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flexbox; */
+}
+
+.is-align-bottom {
+    position: absolute;
+    bottom: 25px;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; */
+}
+
+.is-align-left {
+    position: absolute;
+    left: 25px;
+    /* -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left; */
+}
+
+.is-align-center {
+    position: absolute;
+    left: 50%;
+    /* display: block;
+    margin: auto; */
+    /* text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; */
+}
+
+.is-align-right {
+    right: 25px;
+    /* display: flex;
+    justify-content: flex-start;
+
+    -webkit-box-align: right;
+    -ms-flex-align: right;
+    align-items: right; */
+}

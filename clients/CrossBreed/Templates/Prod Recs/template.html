@@ -1,0 +1,18 @@
+{{~#each products}}
+    <div class="product-slide" >
+        <a href="{{attributes.url.value}}">
+            <picture>
+                <img src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}" width="200" height="215" loading="lazy">
+            </picture>
+            <span class="title">{{attributes.name.value}}</span>
+            <span class="price-container">
+                {{#if ../priceVisibility}}
+                <span class="price-label">From</span><span class="price">${{attributes.listPrice.value}}</span>
+                {{/if }}
+                {{#if ../onSaleVisibility}}
+                    <span style="color:red; font-weight: 600; font-size: 1.2em; display: block;">On Sale</span>
+                {{/if}}
+            </span>
+        </a>
+    </div>        
+{{/each~}}

@@ -1,0 +1,126 @@
+.formDiv {
+    text-align: center;
+}
+
+.evg-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.evg-email {
+    width: 75%;
+    margin: 2rem;
+    padding: .5rem 1rem;
+    border: 1px solid #ddd;
+    color: #59575c;
+}
+
+.evg-btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #F9E601;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.evg-btn-primary {
+    border-color: #F9E601;
+    color: black;
+    background-color: #F9E601;
+    transition: background-color .15s, color .15s;
+}
+
+.evg-btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.evg-cta {
+    margin: 0 1rem;
+}
+
+
+/* ==========================================================================
+   Recommendations Block
+========================================================================== */
+
+.evg-einstein-content-recs {
+    width: 100%;
+    padding: 1em 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+/* ==========================================================================
+   Headers
+========================================================================== */
+
+.evg-einstein-content-recs .evg-h3 {
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1.2;
+}
+
+.evg-einstein-content-recs .evg-header {
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Media Queries
+========================================================================== */
+
+@media screen and (max-width: 575px) {
+    .evg-einstein-content-recs .evg-content-title {
+        font-size: 1.25rem;
+    }
+
+    .evg-einstein-content-recs .evg-content-description {
+        font-size: 1rem;
+    }
+
+    .evg-einstein-content-recs .evg-h3 {
+        margin: 0 0 .5rem;
+        padding: 0;
+        color: inherit;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: inherit;
+        line-height: 1.2;
+    }
+}

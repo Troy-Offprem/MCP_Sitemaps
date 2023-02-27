@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+<div class="{{infobarClass}} {{style.className}}" id="evg-infobar-with-cta" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Infobar{{#if messageText}} - {{messageText}}{{/if}}" role="alert">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="evg-svg">
+=======
+{{!--
+    Global Template: Infobar with Call-to-Action
+
+    This global template places an infobar containing text and a call-to-action button.
+
+    There are two default Styles: Dark text for lighter backgrounds or light text on darker backgrounds.
+
+    Requirements:
+    1) Set the content zone(s) to that defined in your Sitemap. This template assumes a top infobar with the
+    name "global_infobar_top_of_page" in Clientside Code for dynamic positioning of the infobar.
+
+    Customizations:
+    1) As a best practice, set the content zone to "global_infobar_top_of_page" for top infobar and
+    "global_infobar_bottom_of_page" for bottom infobar.
+    See https://developer.evergage.com/web-integration/sitemap/contentzones for recommended names for content zones
+    mapped via the Sitemap.
+    2) Style options can be changed in Serverside Code.
+    3) Styling of the Style options can be changed in CSS.
+    4) To support rich text, add the @richText(true) decorator to configuration properties in Serverside Code.
+    Handlebars expressions for these properties must be wrapped in three sets of curly braces (e.g. {{{expression}}} ).
+    5) Remove or change the default values for the configuration properties in Serverside Code.
+    6) Change the value of the aria-label attributes as necessary.
+--}}
+
+<div class="{{infobarClass}} {{style.className}}" id="evg-infobar-with-cta" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Infobar{{#if messageText}} - {{messageText}}{{/if}}" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="evg-svg">
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447
+		<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+		<path
+			d="M320 144c-53.02 0-96 50.14-96 112 0 61.85 42.98 112 96 112 53 0 96-50.13 96-112 0-61.86-42.98-112-96-112zm40 168c0 4.42-3.58 8-8 8h-64c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h16v-55.44l-.47.31a7.992 7.992 0 0 1-11.09-2.22l-8.88-13.31a7.992 7.992 0 0 1 2.22-11.09l15.33-10.22a23.99 23.99 0 0 1 13.31-4.03H328c4.42 0 8 3.58 8 8v88h16c4.42 0 8 3.58 8 8v16zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zm-16 272c-35.35 0-64 28.65-64 64H112c0-35.35-28.65-64-64-64V176c35.35 0 64-28.65 64-64h416c0 35.35 28.65 64 64 64v160z"
+		/>
+	</svg>
+	<div class="evg-infobar">
+		{{#if messageText}}
+		<p class="evg-message {{style.className}}">{{~messageText~}}</p>
+		{{/if}}
+		<div class="custom">
+			{{#if messageText2}}
+			<p class="evg-message2 {{style.className}}">{{~messageText2~}}</p>
+			{{/if}}
+		</div>
+	</div>
+	<button class="evg-btn-dismissal {{style.className}}" data-evg-dismissal aria-label="Close Infobar">&times;</button>
+<<<<<<< HEAD
+</div>
+ß
+=======
+</div>
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447

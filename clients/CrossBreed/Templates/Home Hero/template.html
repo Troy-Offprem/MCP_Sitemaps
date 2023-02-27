@@ -1,0 +1,9 @@
+<a href="{{linkURL}}" class="slide">
+    <picture vsn-on:touchstart="slider.dragStart($event, slide)" vsn-on:touchmove|active="slider.dragMove($event, slide)" vsn-on:touchend="slider.dragEnd($event, slide)" vsn-on:touchcancel="slider.dragCancel($event, slide)">
+        <source media="(max-width: 1023px)" srcset="{{imageURL}}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{{imageURL}}" type="image/webp">
+        <source media="(max-width: 1023px)" srcset="{{imageURL}}" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="{{imageURL}}" type="image/jpeg">
+        <img src="{{imageURL}}" alt="{{altText}}">
+    </picture>
+</a>

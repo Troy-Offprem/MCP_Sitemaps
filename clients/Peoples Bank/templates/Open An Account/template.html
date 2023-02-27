@@ -1,0 +1,76 @@
+<div class="col-md-8">
+	<div class="left-content">
+		<h2>{{{header1}}}</h2>
+		<p>{{{textBox1}}}</p>
+		<p>{{{textBox2}}}</p>
+		<p>{{{textBox3}}}</p>
+		<h3>{{{header2}}}</h3>
+		<p>Y{{{textBox4}}}</p>
+		<ul>
+			<li>Driver's License or Passport</li>
+			<li>U.S. Social Security Number</li>
+			<li>U.S. Citizenship or Resident Alien Status</li>
+			<li>Current Account Information</li>
+		</ul>
+		<h3></h3>
+		<section class="evg-einstein-content-recs" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Content Recommendations{{#if header}} - {{header}}{{/if}}">
+			{{#if header3}}
+			<h3 class="evg-header evg-h3">{{~header3~}}</h3>
+			{{/if}}
+			<div class="evg-content-recs">
+				{{~#each blogs}}
+				<div class="evg-container">
+					<article class="evg-content-rec" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}">
+						<a href="{{attributes.url.value}}">
+							<img class="evg-content-img" src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}" />
+						</a>
+						<div class="evg-content-details">
+							{{#if ../nameVisibility}}
+							<a class="evg-content-title" href="{{attributes.url.value}}">{{~attributes.name.value~}}</a>
+							{{/if}} {{#if ../descriptionVisibility}} {{#if attributes.description.value}}
+							<div class="evg-content-description">{{~attributes.description.value~}}</div>
+							{{/if}} {{/if}}
+						</div>
+					</article>
+				</div>
+				{{/each~}}
+			</div>
+		</section>
+		<p><a href="https://www.peoplesbanknet.com/current-rates/" target="">Current Rates</a></p>
+		<h4></h4>
+		<h4></h4>
+		<p>&nbsp;</p>
+		<h4 class="push-half-bottom">{{{header4}}}</h4>
+		<p>{{{textBox5}}}</p>
+		<ol>
+			<li><em>You must open a new personal checking that is one of the following product types: PrimeTime or Momentum.</em></li>
+			<li><em>This new checking account must be your first personal checking account relationship with PeoplesBank in the past 24 months.</em></li>
+			<li><em>You must receive at least one direct deposit in the amount of $1250 or more to your newly opened PeoplesBank checking account within 45 days of the account opening. (Deposits in the form of an external transfer from another financial institution, an internal transfer from another PeoplesBank account, or deposits received through any person-to-person app such as Venmo or Zelle, do not qualify as a direct deposit to the account.)&nbsp;</em></li>
+		</ol>
+		<h4>
+			<strong><u>Minimum Balance Requirement</u></strong>
+		</h4>
+		<p>{{{textBox6}}}</p>
+		<h4>{{{header5}}}</h4>
+		<p>{{{textBox7}}}</p>
+		<h4>{{{header6}}}</h4>
+		<p>{{{textBox8}}}</p>
+		<p>
+			<a href="https://edie.fdic.gov/index.html" class="a_external_link">
+				<img
+					decoding="async"
+					loading="lazy"
+					class="alignnone size-thumbnail wp-image-9263"
+					src="https://www.peoplesbanknet.com/content/uploads/2022/05/fdic-member-logo-lightgray-150x150.png"
+					alt="FDIC Member Logo"
+					width="150"
+					height="150"
+					sizes="(max-width: 150px) 100vw, 150px"
+				/>
+			</a>
+		</p>
+		<div class="team">
+			<h2></h2>
+		</div>
+	</div>
+</div>

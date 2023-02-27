@@ -1,0 +1,30 @@
+<ul class="nm-products products xsmall-block-grid-1 small-block-grid-2 medium-block-grid-3 large-block-grid-5 grid-default layout-centered">
+    {{~#each products}}
+    <li class="product type-product status-publish first instock product_cat-holsters product_cat-g2-holsters product_cat-g2-iwb-holsters product_cat-holsters-with-add-ons product_cat-iwb-holsters has-post-thumbnail featured taxable shipping-taxable purchasable product-type-variable">
+       <div class="nm-shop-loop-product-wrap">
+          <div class="nm-shop-loop-thumbnail">
+             <a href="{{attributes.url.value}}" class="nm-shop-loop-thumbnail-link woocommerce-LoopProduct-link">
+             {{#if ../onSaleVisibility}}
+             <span class="onsale">Sale!</span>
+             {{/if}}
+             <img src="{{attributes.imageUrl.value}}" data-src="{{attributes.imageUrl.value}}">            </a>
+          </div>
+          <div class="nm-shop-loop-details">
+             <div class="nm-shop-loop-title-price">
+                <h3 class="woocommerce-loop-product__title"><a href="{{attributes.url.value}}" class="nm-shop-loop-title-link woocommerce-LoopProduct-link">The Professional G2 IWB (Inside The Waistband) Holster</a></h3>
+                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">
+                    {{#if ../priceVisibility}}
+                    $</span><bdi>{{attributes.listPrice.value}}</bdi></span>
+                    {{else}}
+                    </span><bdi style="color:red!important; font-weight:600;">On Sale</bdi></span>
+                    {{/if}}
+                 </span>
+             </div>
+             <div class="nm-shop-loop-actions">
+                <a href="{{attributes.url.value}}" class="nm-quickview-btn">Show more</a>            
+             </div>
+          </div>
+       </div>
+    </li>
+    {{/each~}}
+ </ul>

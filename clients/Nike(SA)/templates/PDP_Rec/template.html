@@ -1,0 +1,48 @@
+<section class="evg-einstein-product-recs carousel-simple carousel-simple-arrows-enabled related-products-carousel" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Product Recommendations{{#if header}} - {{header}}{{/if}}">
+	<div class="row-title-arrows">
+		{{#if header}}
+		<div class="section-title-layout flex-fill">
+			<h3 class="evg-header evg-h3">{{~header~}}</h3>
+		</div>
+		{{/if}}
+		<div class="arrows-enabled flex-shrink-0">
+			<button type="button" class="btn-previous btn btn-circle disabled" role="presentation">
+				<div class="icon">
+					<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+						<path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path>
+					</svg>
+				</div>
+			</button>
+			<button type="button" class="btn-next btn btn-circle" role="presentation">
+				<div class="icon">
+					<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+						<path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path>
+					</svg>
+				</div>
+			</button>
+		</div>
+	</div>
+	<div class="evg-product-recs slides slides-arrows-enabled">
+		{{~#each products}}
+		<div class="evg-product-rec experience-component experience-nike_assets-productCarouselTile" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}">
+			<div class="image-container product-tile-carousel">
+				<a href="{{attributes.url.value}}">
+					<img class="evg-product-img" src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}" />
+				</a>
+				<div class="evg-product-details">
+					<div class="product-title">
+						{{#if ../nameVisibility}}
+						<a class="evg-product-name" href="{{attributes.url.value}}">{{~attributes.name.value~}}</a>
+						{{/if}} {{#if ../priceVisibility}}
+						<div class="evg-product-price">S/&nbsp{{~attributes.price.value~}}</div>
+						{{/if}}
+					</div>
+				</div>
+				{{#if ../descriptionVisibility}} {{#if attributes.description.value}}
+				<div class="evg-product-description">{{~attributes.description.value~}}</div>
+				{{/if}} {{/if}}
+			</div>
+		</div>
+		{{/each~}}
+	</div>
+</section>

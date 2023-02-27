@@ -1,0 +1,21 @@
+<div class="contentevg-einstein-content-recs" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Content Recommendations{{#if header}} - {{header}}{{/if}}">
+	{{#if header}}
+	<h2 class="text-center lora italic">{{~header~}}</h2>
+	{{/if}}
+	<div class="row">
+		{{~#each blogs}}
+		<div class="featured-blog three columns" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}">
+			<a href="{{attributes.url.value}}">
+				<div class="image rocket-lazyload lazyloaded" style="width: 100%; height: 260px; background-size: cover; background-position: center center; margin-bottom: 1rem; box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 5px 2px; background-image: url({{attributes.imageUrl.value}});" data-ll-status="loaded"></div>
+			</a>
+			<div class="teaser">
+				<a href="{{attributes.url.value}}" title="{{attributes.name.value}}" target="_blank">
+					<h5 class="white medium">{{attributes.name.value}}</h5>
+				</a>
+				<p class="white">{{attributes.description.value}}</p>
+				<p><a href="{{attributes.url.value}}" class="yellow bold uppercase read-more" title="{{attributes.name.value}}" aria-label="{{attributes.name.value}}">Read More</a></p>
+			</div>
+		</div>
+		{{/each~}}
+	</div>
+</div>

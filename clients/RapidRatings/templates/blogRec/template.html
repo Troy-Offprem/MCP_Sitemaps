@@ -1,0 +1,24 @@
+<section class="evg-einstein-content-recs" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}" aria-label="Content Recommendations{{#if header}} - {{header}}{{/if}}">
+	{{#if header}}
+	<h1 class="evg-header evg-h3">{{~header~}}</h1>
+	{{/if}}
+	<div class="evg-content-recs">
+		{{~#each blogs}}
+		<div class="evg-container">
+			<article class="evg-content-rec" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}">
+				<a href="{{attributes.url.value}}">
+					<img class="evg-content-img" src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}" style="max-height: 200px; width: auto; margin: auto;" />
+				</a>
+				<div class="evg-content-details">
+					{{#if ../nameVisibility}}
+                    <a href="{{attributes.url.value}}" class="evg-content-title">{{~attributes.name.value~}}</a>
+					{{/if}} {{#if ../descriptionVisibility}} {{#if attributes.description.value}}
+					<div class="evg-content-description">{{~attributes.description.value~}}</div>
+                    <button class="evg-btn evg-btn-primary evg-btn-lg" href="{{attributes.url.value}}"> Read More </button>
+					{{/if}} {{/if}}
+				</div>
+			</article>
+		</div>
+		{{/each~}}
+	</div>
+</section>

@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Infobar
+========================================================================== */
+
+#evg-infobar-with-cta {
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 5px;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	box-sizing: border-box;
+	height: auto;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+#evg-infobar-with-cta .evg-svg {
+	height: 2rem;
+	margin-left: 1.5rem;
+	fill: #f5f5f5;
+}
+
+#evg-infobar-with-cta .evg-message {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+#evg-infobar-with-cta .evg-message2 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+#evg-infobar-with-cta .evg-infobar {
+	display: inline;
+	margin-left: 15px;
+}
+
+#evg-infobar-with-cta .evg-btn-dismissal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 1px solid transparent;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	cursor: pointer;
+}
+
+/* ==========================================================================
+   Style
+========================================================================== */
+
+#evg-infobar-with-cta.evg-light-on-dark {
+	color: #f5f5f5;
+	background-color: #35ae20;
+	border: 1px solid #f5f5f5;
+}
+
+#evg-infobar-with-cta.evg-dark-on-light {
+	color: #35ae20;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+#evg-infobar-with-cta .evg-btn-dismissal.evg-light-on-dark {
+	color: #f5f5f5;
+}
+
+#evg-infobar-with-cta .evg-btn-dismissal.evg-dark-on-light {
+	color: #35ae20;
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447
+/* ==========================================================================
+   Media Queries
+========================================================================== */
+
+@media screen and (max-width: 1200px) {
+	#evg-infobar-with-cta .evg-message,
+	#evg-infobar-with-cta .evg-message2 {
+<<<<<<< HEAD
+		font-size: 0.8rem;
+=======
+		font-size: .8rem;
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#evg-infobar-with-cta .evg-message,
+	#evg-infobar-with-cta .evg-message2 {
+<<<<<<< HEAD
+		font-size: 0.7rem;
+=======
+		font-size: .7rem;
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#evg-infobar-with-cta .evg-message,
+	#evg-infobar-with-cta .evg-message2 {
+<<<<<<< HEAD
+		font-size: 0.6rem;
+	}ß
+=======
+		font-size: .6rem;
+	}
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447
+}
+
+@media screen and (max-width: 360px) {
+	#evg-infobar-with-cta .evg-message,
+	#evg-infobar-with-cta .evg-message2 {
+<<<<<<< HEAD
+		font-size: 0.5rem;
+	}
+}
+=======
+		font-size: .5rem;
+	}
+}
+>>>>>>> d14eae8705c7f9ba142f59f115c38bc5a3887447

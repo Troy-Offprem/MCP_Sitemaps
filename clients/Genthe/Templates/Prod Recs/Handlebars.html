@@ -1,0 +1,63 @@
+<ul class="evg-einstein-product-recs" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}"
+data-evg-user-group="{{userGroup}}" aria-label="Product Recommendations{{#if header}} - {{header}}{{/if}}">
+    <div class="evg-product-recs">
+        {{~#each products}}
+            <li class="vehicle-list-item">
+            <div class="vehicle clearfix pointer">
+                <a href="{{attributes.url.value}}" class="media" aria-label="{{~attributes.name.value~}}" role="presentation" aria-hidden="true" tabindex="-1">
+                <img class="photo thumb evg-product-img" src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}" title="{{attributes.name.value}}">
+                </a>
+                <div class="info ddc-section-height-default">
+                    <div class="info-container">
+                        <h5 class="h5 title" role="presentation">{{attributes.name.value}}</h5>
+                        <ul class="pricing list-unstyled" role="presentation">
+                            <li class="price personalized" role="presentation">
+                            <span class="value" style="font-weight:bold">
+                                {{#if ../pricingVisibility}}
+                                    ${{attributes.price.value}}
+                                {{else}}
+                                    Please Call
+                                {{/if}}
+                            </span>
+                        </li>
+                        </ul>
+                        <div class="rv-details-wrapper">
+                        <p class="sr-only">Quick Specs</p>
+                        <ul class="list-unstyled">
+                            <li class="rv-recommended-details" data-name="bodyStyle">
+                                {{#if ../bodyStyleVisibility}}
+                                    {{dimensions.Body}}
+                                {{/if}}
+                            </li>
+                            <li class="rv-recommended-details" data-name="fuelEconomy">
+                                {{#if ../fuelEconomyVisibility}}
+                                    {{dimensions.FuelEconomy}}
+                                {{/if}}
+                            </li>
+                            <li class="rv-recommended-details" data-name="normalExteriorColor">
+                                {{#if ../exteriorColorVisibility}}
+                                    {{dimensions.ExteriorColor}}
+                                {{/if}}
+                                </li>
+                            <li class="rv-recommended-details" data-name="engine">
+                                {{#if ../engineVisibility}}
+                                    {{dimensions.Engine}}
+                                {{/if}}
+                            </li>
+                            <li class="rv-recommended-details" data-name="drivetrain">
+                                {{#if ../drivetrainVisibility}}
+                                    {{dimensions.Drivetrain}}
+                                {{/if}}
+                            </li>
+                        </ul>
+                        <a href="{{attributes.url.value}}" class="btn btn-primary btn-block">
+                            View Details
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </li>
+        {{/each~}}
+    </div>
+</ul>

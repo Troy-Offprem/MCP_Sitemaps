@@ -1,0 +1,88 @@
+<div id="evg-exit-intent-popup-email-capture" data-evg-campaign-id="{{campaign}}"
+data-evg-experience-id="{{experience}}" data-evg-user-group="{{userGroup}}"
+aria-label="Popup{{#if header}} - {{header}}{{/if}}" role="dialog" aria-modal="true" aria-hidden="false">
+
+    <div class="evg-overlay" data-evg-dismissal></div>
+    <div class="evg-popup evg-style-bg evg-light-on-dark">
+        <div class="evg-main-panel">
+            <img src='{{ headerImageUrl }}' class="header-image">
+                
+            </img>
+            <img src="{{ productImageUrl }}"/ style="width:100%">
+            <div class="pop-up-sub-section">
+                <h1 class="evg-header evg-h1 evg-display-4 evg-style-text evg-light-on-dark">
+                    {{~header~}}
+                </h1>
+                 
+                {{#if subheader}}
+                <h2 class="evg-subheader evg-h2 evg-style-text evg-light-on-dark">
+                    {{~subheader~}}
+                </h2>
+                {{/if}}
+                <form class="evg-form" aria-label="Email Signup" role="form">
+                    <!-- <input class="evg-email" name="email" type="email" required placeholder="Email" novalidate
+                    aria-label="Email" aria-required="true" tabindex="0">
+                    <span class="evg-error-msg evg-hide">
+                        Enter a valid email address
+                    </span> -->
+                    <a href={{redirectUrl}} class="evg-cta evg-btn evg-btn-primary evg-btn-lg evg-light-on-dark" onsubmit="return false;"
+                    tabindex="1" type="button" aria-label="Submit">
+                        {{~ctaText~}}
+                    </a>
+                </form>
+                <span class="evg-opt-out-msg evg-style-text evg-light-on-dark" tabindex="2" data-evg-dismissal>
+                    {{~optOutText~}}
+                </span>
+            </div>
+        </div>
+        <!-- <div class="evg-confirm-panel evg-hide">
+            <img src='{{imageUrl}}' class="header-image">
+                
+            </img>
+            <div class="pop-up-sub-section">
+                <h1 class="evg-confirm-header evg-h1 evg-style-text evg-light-on-dark">
+                    {{~confirmationHeader~}}
+                </h1>
+            </div>
+            <div>
+                {{#if displayProdRecs}} 
+                    {{#if productRecsSubheader}}
+                    <h3 class="evg-confirm-subheader evg-style-text">
+                        {{~productRecsSubheader~}}
+                    </h3>
+                    {{/if}}
+                    <section class="evg-einstein-product-recs" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}"
+                        data-evg-user-group="{{userGroup}}" aria-label="Product Recommendations{{#if header}} - {{header}}{{/if}}">
+                        <div class="evg-product-recs">
+                            <div class="evg-product-recs"> 
+                                {{~#each products}}
+                                <article class="evg-product-rec" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}"
+                                style="max-width: calc((1 / {{../maximumNumberOfProducts}} * 100%));">
+                                    
+                                    <a href="{{attributes.url.value}}">
+                                        <img class="evg-product-img" src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}"/>
+                                    </a>
+                                    <div class="evg-product-details">
+                                        <a class="evg-product-name" href="{{attributes.url.value}}">
+                                            {{~attributes.name.value~}}
+                                        </a>
+                                        {{#if ../descriptionVisibility}}
+                                            {{#if attributes.description.value}}
+                                            <div class="evg-product-description">
+                                                {{~attributes.description.value~}}
+                                            </div>
+                                            {{/if}}
+                                        {{/if}}
+                                    </div>
+                                </article>
+                                {{/each~}}
+                            </div>
+                        </div>
+                    </section>
+                {{/if}}
+            </div>
+        </div>
+        <button class="evg-btn-dismissal evg-style-text evg-light-on-dark" data-evg-dismissal
+        aria-label="Close Popup" tabindex="3">&times;</button>
+    </div> -->
+</div>

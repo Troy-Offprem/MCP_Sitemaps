@@ -1,0 +1,25 @@
+<div class="uk-grid" data-evg-campaign-id="{{campaign}}" data-evg-experience-id="{{experience}}"
+	data-evg-user-group="{{userGroup}}" aria-label="Content Recommendations">
+	<div>
+		<ul class="uk-subnav uk-subnav-pill uk-width-2-5@m uk-float-right" data-uk-switcher="">
+			{{~#each articles}}
+			<li aria-expanded="true" data-evg-item-id="{{id}}" data-evg-item-type="{{../itemType}}">
+				<h3 class="dynamiccomponenteditenable contentfocus" data-editbuttontext data-editable="True">
+					{{~attributes.name.value~}}</h3>
+				<p class="contentfocus" tabindex="0">{{~attributes.description.value~}}</p>
+				<p>
+					<a href="{{attributes.url.value}}" class="link-with-arrow">
+						Learn More
+					</a>
+				</p>
+			</li>
+			{{/each~}}
+		</ul>
+		<ul class="uk-switcher uk-width-3-5@m uk-float-left" style="touch-action: pan-y pinch-zoom">
+				{{~#each articles}}
+			<li class="dynamiccomponenteditenable" data-editbuttontext data-editable="True">
+				<img src="{{attributes.imageUrl.value}}" alt="{{~attributes.name.value~}}" width="840" height="630" data-nodeferimage="true" /></li>
+				{{/each~}}
+		</ul>
+	</div>
+</div>

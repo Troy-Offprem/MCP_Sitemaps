@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Recommendations Block
+========================================================================== */
+
+.evg-einstein-content-recs {
+    width: 100%;
+    padding: 1em 0;
+    color: inherit;
+    font-family: inherit;
+    background-color: white;
+}
+
+.formDiv {
+    text-align: center
+}
+
+.evg-confirm-panel {
+    text-align: center;
+}
+
+.evg-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.evg-email {
+    width: 75%;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border: 1px solid #ddd;
+    color: #59575c;
+}
+
+.evg-einstein-content-recs .evg-content-recs {
+    position: relative;
+    z-index: 2;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    width: auto;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.evg-einstein-content-recs .evg-container {
+    width: 50%;
+}
+
+/* ==========================================================================
+   Call-To-Action Button
+========================================================================== */
+
+.evg-btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #F9E601;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.evg-hide {
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.evg-btn-primary {
+    border-color: #F9E601;
+    color: black;
+    background-color: #F9E601;
+    transition: background-color .15s, color .15s;
+}
+
+.evg-btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.evg-cta {
+    margin: .5rem 0;
+}
+
+
+/* ==========================================================================
+   Headers
+========================================================================== */
+
+.evg-einstein-content-recs .evg-h3 {
+    color: inherit;
+    font-family: inherit;
+}
+
+.evg-einstein-content-recs .evg-header {
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Individual Content Recommendation
+========================================================================== */
+
+.evg-einstein-content-recs .evg-content-rec {
+    margin: 1rem;
+}
+
+.evg-einstein-content-recs .evg-content-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.evg-einstein-content-recs .evg-content-details {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.evg-einstein-content-recs .evg-content-title {
+    display: block;
+    height: auto;
+    font-size: 24pt;
+    font-weight: bold;
+    line-height: 2rem;
+    color: black;
+}
+
+.evg-einstein-content-recs .evg-content-description {
+    /* overflow: hidden; */
+    height: auto;
+    padding-bottom: 1rem;
+    font-size: 14pt;
+    line-height: 1.5rem;
+    color: #98a4ae;
+}
+
+/* ==========================================================================
+   Media Queries
+========================================================================== */
+
+@media screen and (max-width: 575px) {
+    .evg-einstein-content-recs .evg-content-title {
+        font-size: 1.25rem;
+    }
+
+    .evg-einstein-content-recs .evg-content-description {
+        font-size: 1rem;
+    }
+
+    .evg-einstein-content-recs .evg-h3 {
+        margin: 0 0 .5rem;
+        padding: 0;
+        color: inherit;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: inherit;
+        line-height: 1.2;
+    }
+}

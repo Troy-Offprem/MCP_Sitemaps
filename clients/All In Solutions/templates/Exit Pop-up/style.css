@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Pop-up
+========================================================================== */
+
+#evg-exit-intent-popup {
+  position: relative;
+  z-index: 10000000;
+}
+
+#evg-exit-intent-popup .evg-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#evg-exit-intent-popup .evg-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#evg-exit-intent-popup .evg-btn-dismissal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#evg-exit-intent-popup .evg-main-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.evg-sub-panel {
+  width: 50%;
+  margin: 0 1rem 0 1rem;
+
+}
+
+.evg-image {
+  width: 50%;
+  height: 100%;
+}
+
+.evg-header {
+  font-size: 2.25rem;
+  overflow-wrap: break-word;
+}
+
+.evg-subheader {
+  font-size: .75rem;
+  overflow-wrap: break-word;
+}
+
+/* ==========================================================================
+   Call-To-Action Button
+========================================================================== */
+
+#evg-exit-intent-popup .evg-btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  color: #296d8b;
+  background-color: transparent;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#evg-exit-intent-popup .evg-btn-primary {
+  border-color: #296d8b;
+  color: #fff;
+  background-color: #296d8b;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+#evg-exit-intent-popup .evg-btn-lg {
+  padding: 0.5rem;
+}
+
+#evg-exit-intent-popup .evg-cta {
+  margin: 0.5rem 0;
+}
+
+/* ==========================================================================
+   Style
+========================================================================== */
+
+#evg-exit-intent-popup .evg-style-bg.evg-light-on-dark {
+  background-color: #1E3362;
+  font-family: Georgia, serif;
+}
+
+#evg-exit-intent-popup .evg-style-bg.evg-dark-on-light {
+  background-color: #fff;
+  font-family: Georgia, serif;
+}
+
+#evg-exit-intent-popup .evg-style-text.evg-light-on-dark {
+  color: #fff;
+  font-family: Georgia, serif;
+}
+
+#evg-exit-intent-popup .evg-style-text.evg-dark-on-light {
+  color: #1E3362;
+  font-family: Georgia, serif;
+}
+
+/* ==========================================================================
+   Media Queries
+========================================================================== */
+
+@media screen and (max-height: 500px) {
+  #evg-exit-intent-popup .evg-popup {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #evg-exit-intent-popup .evg-popup {
+    width: 90vw;
+  }
+
+  #evg-exit-intent-popup .evg-h1.evg-display-4 {
+    font-size: 2.75rem;
+  }
+
+  #evg-exit-intent-popup .evg-h2 {
+    font-size: 1.2rem;
+  }
+
+  #evg-exit-intent-popup .evg-btn-lg {
+    font-size: 1rem;
+  }
+}
